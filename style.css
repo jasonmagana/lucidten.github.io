@@ -11,10 +11,21 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
     font-size: 35pt;
-    background-image: linear-gradient(to right, rgb(113, 121, 126), rgb(132, 136, 132));
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: .2rem;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #676767, #808080, #A9A9A9, #818589, #899499, #C0C0C0, #71797E);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }
 
 [data-tab-content] {
@@ -40,14 +51,29 @@
     cursor: pointer;
 }
 
-.tab.active {
-    background-color: #888;
-}
+
 
 .tab:hover {
-    background-color: #888;
+    color: #888;
 }
 
+
  #home {
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+}
+
+#services {
+    text-align: center;
+}
+
+#book {
+    text-align: center;
+}
+
+#reviews {
     text-align: center;
 }
